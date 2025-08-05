@@ -1,10 +1,7 @@
 name: First Workflow
 
 
-#on: [push, issues, pull_request]
-# manual workflow only works with the default branch
-on:
-  workflow_dispatch
+on: [push, issues, pull_request
 
 jobs:
   build:
