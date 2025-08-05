@@ -10,8 +10,11 @@ name: First Workflow
 
 on: 
   push:
-    branches-ignore:
+    branches:
       - master
+      - '! develop'
+    tags-ignore:
+      - 'v1.*'
 
 
 jobs:
