@@ -1,7 +1,13 @@
 name: First Workflow
 
 
-on: [push, issues, pull_request]
+#on: [push, issues, pull_request]
+
+#only execute the flow when pull_request with an activity type is in opened status
+on: 
+  pull_request:
+    types: opened
+
 
 jobs:
   build:
