@@ -1,0 +1,14 @@
+name: Runner-Workflow
+
+on:
+  push:
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show the OS Details
+        run: |
+            echo "This workflow is running on a GitHub runner."
+            echo "Runner Name: $RUNNER_NAME"
+            echo "Runner OS Version: $RUNNER_OS_VERSION"
